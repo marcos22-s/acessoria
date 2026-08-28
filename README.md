@@ -1,16 +1,39 @@
-# React + Vite
+# Assessoria de Boletos para MEI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page da Assessoria de Boletos — um serviço de organização de contas a pagar
+para Microempreendedores Individuais (MEIs). Recebemos boletos de fornecedores em
+cópia, organizamos o cronograma de vencimentos e avisamos o cliente no WhatsApp
+antes de cada pagamento.
 
-Currently, two official plugins are available:
+🔗 **Site no ar:** https://helpful-medovik-7421d7.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## O que o serviço faz
 
-## React Compiler
+- 📥 Recebe boletos de fornecedores em cópia
+- 🗓️ Organiza um cronograma de vencimentos
+- 📲 Envia alertas de vencimento pelo WhatsApp
+- 🔒 Nunca acessa o dinheiro do cliente, nunca faz pagamentos e nunca pede senhas —
+  o trabalho é 100% de triagem e notificação
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- [React](https://react.dev) + [Vite](https://vite.dev)
+- [Tailwind CSS](https://tailwindcss.com)
+- [lucide-react](https://lucide.dev) para ícones
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Rodando localmente
+
+```bash
+npm install
+npm run dev
+```
+
+O site abre em `http://localhost:5173`.
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+Gera os arquivos finais na pasta `dist/`, prontos para deploy.
